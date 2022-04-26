@@ -146,7 +146,6 @@ spec:
         volumeMounts:
         - mountPath: /tmp
           name: tmp-volume
-        volumeMounts:
         - mountPath: /data/db
           name: data-vol
       dnsPolicy: ClusterFirst
