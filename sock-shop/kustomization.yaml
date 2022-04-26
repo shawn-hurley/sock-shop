@@ -1,7 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ConfigMap_sock-shop_kube-root-ca.crt.yaml
 - Deployment_sock-shop_carts-db.yaml
 - Deployment_sock-shop_carts.yaml
 - Deployment_sock-shop_catalogue-db.yaml
