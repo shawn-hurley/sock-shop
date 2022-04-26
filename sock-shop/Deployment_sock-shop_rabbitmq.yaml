@@ -155,16 +155,6 @@ spec:
           name: rabbitmq
           protocol: TCP
         resources: {}
-        securityContext:
-          capabilities:
-            add:
-            - CHOWN
-            - SETGID
-            - SETUID
-            - DAC_OVERRIDE
-            drop:
-            - all
-          readOnlyRootFilesystem: true
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
       - image: kbudde/rabbitmq-exporter

@@ -188,13 +188,6 @@ spec:
           requests:
             cpu: 100m
             memory: 300Mi
-        securityContext:
-          capabilities:
-            drop:
-            - all
-          readOnlyRootFilesystem: true
-          runAsNonRoot: true
-          runAsUser: 10001
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
       dnsPolicy: ClusterFirst

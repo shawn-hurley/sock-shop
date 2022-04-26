@@ -141,15 +141,6 @@ spec:
           name: mongo
           protocol: TCP
         resources: {}
-        securityContext:
-          capabilities:
-            add:
-            - CHOWN
-            - SETGID
-            - SETUID
-            drop:
-            - all
-          readOnlyRootFilesystem: true
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
         volumeMounts:

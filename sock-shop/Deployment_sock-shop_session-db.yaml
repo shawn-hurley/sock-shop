@@ -132,15 +132,6 @@ spec:
           name: redis
           protocol: TCP
         resources: {}
-        securityContext:
-          capabilities:
-            add:
-            - CHOWN
-            - SETGID
-            - SETUID
-            drop:
-            - all
-          readOnlyRootFilesystem: true
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
       dnsPolicy: ClusterFirst
