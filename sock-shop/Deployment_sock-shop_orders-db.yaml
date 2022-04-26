@@ -146,6 +146,9 @@ spec:
         volumeMounts:
         - mountPath: /tmp
           name: tmp-volume
+        volumeMounts:
+        - mountPath: /data/db
+          name: data-volume
       dnsPolicy: ClusterFirst
       nodeSelector:
         beta.kubernetes.io/os: linux
@@ -157,3 +160,6 @@ spec:
       - emptyDir:
           medium: Memory
         name: tmp-volume
+      - emptyDir:
+          medium: Memory
+        name: data-volume
